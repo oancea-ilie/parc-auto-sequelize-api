@@ -1,0 +1,38 @@
+{
+  "name": "parc-auto",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc mocha --exit --recursive",
+    "start": "node ./bin/www",
+    "deploy": "./deploy.sh",
+    "start:dev": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Author Name",
+  "license": "",
+  "homepage": "",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.0",
+    "mysql2": "^2.3.3",
+    "pg": "^7.17.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": ">=5.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
